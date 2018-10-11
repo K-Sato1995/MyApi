@@ -1,7 +1,7 @@
 class Api::V1::TopicsController < ApplicationController
   def index
-    topics = Topic.created(created_at::desc)
-    render json: { status: 'SUCCESS', data: topics }, status: :ok
+    topics = Topic.order(created_at: :desc)
+    render json: { status: 'SUCCESS', message: 'loaded posts', data: topics }, status: :ok
   end
 
   def create

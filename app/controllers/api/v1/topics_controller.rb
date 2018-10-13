@@ -4,6 +4,11 @@ class Api::V1::TopicsController < ApplicationController
     render json: { status: 'SUCCESS', message: 'loaded posts', data: topics }, status: :ok
   end
 
+  def show
+    topic = Topic.find(params[:id])
+    render json: { status: 'SUCCESS', message: 'loaded the post', data: topic }, status: :ok
+  end
+
   def create
     topic = Topic.new(topic_params)
     if topic.save

@@ -49,6 +49,23 @@ Make a `get` request to `http://localhost:3000/api/v1/topics` and you will get t
 }
 ```
 
+# Get a topic
+Make a `get` request to `http://localhost:3000/api/v1/topics/topic_id`(ex:`http://localhost:3000/api/v1/topics/2`).
+The API would return something like the data below.
+
+```json
+{
+    "status": "SUCCESS",
+    "message": "Loaded the topic",
+    "data": {
+        "id": 2,
+        "title": "title_new",
+        "created_at": "2018-12-20T01:58:00.104Z",
+        "updated_at": "2018-12-20T01:58:00.104Z"
+    }
+}
+```
+
 # Create a topic
 Make a `post` request to `http://localhost:3000/api/v1/topics` with the data like the following code.
 

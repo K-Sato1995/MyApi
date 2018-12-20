@@ -59,7 +59,7 @@ The API would return something like the data below.
     "message": "Loaded the topic",
     "data": {
         "id": 2,
-        "title": "title_new",
+        "title": "title2",
         "created_at": "2018-12-20T01:58:00.104Z",
         "updated_at": "2018-12-20T01:58:00.104Z"
     }
@@ -80,7 +80,7 @@ The API would return something like this.
 {
     "status": "SUCCESS",
     "data": {
-        "id": 2,
+        "id": 4,
         "title": "New_title",
         "created_at": "2018-12-20T02:15:30.945Z",
         "updated_at": "2018-12-20T02:15:30.945Z"
@@ -89,7 +89,7 @@ The API would return something like this.
 ```
 
 # Update a topic
-Make a `put` or `patch` request to `http://localhost:3000/api/v1/topics/topic_id`(ex:`http://localhost:3000/api/v1/topics/2`) with the data like the code below.
+Make a `put` or `patch` request to `http://localhost:3000/api/v1/topics/topic_id`(ex:`http://localhost:3000/api/v1/topics/4`) with the data like the code below.
 
 ```json
 {
@@ -104,7 +104,7 @@ The API would return something like this.
     "status": "SUCCESS",
     "message": "Updated the topic",
     "data": {
-        "id": 2,
+        "id": 4,
         "title": "Updated_title",
         "created_at": "2018-12-20T01:58:12.051Z",
         "updated_at": "2018-12-20T02:17:47.830Z"
@@ -113,7 +113,7 @@ The API would return something like this.
 ```
 
 # Delete a topic
-Make a `put` or `patch` request to `http://localhost:3000/api/v1/topics/topic_id`(ex:`http://localhost:3000/api/v1/topics/2`).
+Make a `put` or `patch` request to `http://localhost:3000/api/v1/topics/topic_id`(ex:`http://localhost:3000/api/v1/topics/4`).
 
 The API would return something like this if the data was successfully deleted.
 
@@ -122,7 +122,7 @@ The API would return something like this if the data was successfully deleted.
     "status": "SUCCESS",
     "message": "Deleted the topic",
     "data": {
-        "id": 2,
+        "id": 4,
         "title": "Updated_title",
         "created_at": "2018-12-20T01:58:12.051Z",
         "updated_at": "2018-12-20T02:17:47.830Z"

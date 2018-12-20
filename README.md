@@ -6,10 +6,10 @@ $ bundle install
 $ rake db:migrate
 ```
 
-After running the commands above, run `rails s` and you can make the api up and running.
+After running the commands above, run `rails s` to make the api up and running.
 
 # Testing 
-First of all, crate some data in your rails console.
+First of all, create some data in your rails console.
 
 ```console
 $ rails c
@@ -19,7 +19,7 @@ $ Topic.create(titel: "title3")
 ```
 
 Now you can use [Postman](https://www.getpostman.com/) to test if the api is working properly.
-Make a get request to the `http://localhost:3000/api/v1/topics` and you will get the json formatted data like the code below.
+Make a get request to `http://localhost:3000/api/v1/topics` and you will get the json formatted data like the code below.
 
 ```json
 {

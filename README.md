@@ -8,14 +8,11 @@ $ rake db:migrate
 
 After running the commands above, run `rails s` to make the api up and running.
 
-# Testing 
-First of all, create some data in your rails console.
+# Testing
+First of all, create some data by running the code below.
 
 ```console
-$ rails c
-$ Topic.create(titel: "title1")
-$ Topic.create(titel: "title2")
-$ Topic.create(titel: "title3")
+$ rake db:seed
 ```
 
 # Get topics

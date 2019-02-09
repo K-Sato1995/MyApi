@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :topic do
+  factory :post do
     title { 'title' }
   end
 end

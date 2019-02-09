@@ -1,1 +1,1 @@
-3.times { |i| Topic.create(title: "Title#{i + 1}") }
+3.times { |i| Post.create(title: "Title#{i + 1}") }

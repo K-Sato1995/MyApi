@@ -15,9 +15,9 @@ First of all, create some data by running the code below.
 $ rake db:seed
 ```
 
-# Get topics
+# Get posts
 Now you can use [Postman](https://www.getpostman.com/) to test if the api is working properly.
-Make a `get` request to `http://localhost:3000/api/v1/topics` and you will get the json formatted data like the code below.
+Make a `get` request to `http://localhost:3000/api/v1/posts` and you will get the json formatted data like the code below.
 
 ```json
 {
@@ -46,14 +46,14 @@ Make a `get` request to `http://localhost:3000/api/v1/topics` and you will get t
 }
 ```
 
-# Get a topic
-Make a `get` request to `http://localhost:3000/api/v1/topics/topic_id`(ex:`http://localhost:3000/api/v1/topics/2`).
+# Get a post
+Make a `get` request to `http://localhost:3000/api/v1/posts/post_id`(ex:`http://localhost:3000/api/v1/posts/2`).
 The API would return something like the data below.
 
 ```json
 {
     "status": "SUCCESS",
-    "message": "Loaded the topic",
+    "message": "Loaded the post",
     "data": {
         "id": 2,
         "title": "title2",
@@ -63,8 +63,8 @@ The API would return something like the data below.
 }
 ```
 
-# Create a topic
-Make a `post` request to `http://localhost:3000/api/v1/topics` with the data like the following code.
+# Create a post
+Make a `post` request to `http://localhost:3000/api/v1/posts` with the data like the following code.
 
 ```json
 {
@@ -85,8 +85,8 @@ The API would return something like this.
 }
 ```
 
-# Update a topic
-Make a `put` or `patch` request to `http://localhost:3000/api/v1/topics/topic_id`(ex:`http://localhost:3000/api/v1/topics/4`) with the data like the code below.
+# Update a post
+Make a `put` or `patch` request to `http://localhost:3000/api/v1/posts/post_id`(ex:`http://localhost:3000/api/v1/posts/4`) with the data like the code below.
 
 ```json
 {
@@ -99,7 +99,7 @@ The API would return something like this.
 ```
 {
     "status": "SUCCESS",
-    "message": "Updated the topic",
+    "message": "Updated the post",
     "data": {
         "id": 4,
         "title": "Updated_title",
@@ -109,15 +109,15 @@ The API would return something like this.
 }
 ```
 
-# Delete a topic
-Make a `put` or `patch` request to `http://localhost:3000/api/v1/topics/topic_id`(ex:`http://localhost:3000/api/v1/topics/4`).
+# Delete a post
+Make a `put` or `patch` request to `http://localhost:3000/api/v1/posts/post_id`(ex:`http://localhost:3000/api/v1/posts/4`).
 
 The API would return something like this if the data was successfully deleted.
 
 ```json
 {
     "status": "SUCCESS",
-    "message": "Deleted the topic",
+    "message": "Deleted the post",
     "data": {
         "id": 4,
         "title": "Updated_title",
